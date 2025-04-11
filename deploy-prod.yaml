@@ -1,0 +1,9 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: prod-microservice-01
+spec:
+  template:
+    spec:
+      containers:
+      - image: microservice-01      
