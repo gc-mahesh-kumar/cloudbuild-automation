@@ -1,0 +1,12 @@
+steps:
+# Build and push the image
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['builds', 'submit', '-t', '${_ARTIFACTS_REGISTRY_URL}/$PROJECT_ID/${_APP_NAME}:${SHORT_SHA}']
+
+substitutions:
+    _REGION: us-central1
+    _ARTIFACTS_REGISTRY_URL: us-central1-docker.pkg.dev
+    _APP_NAME: container-images/automation-01
+
+options:
+  logging: CLOUD_LOGGING_ONLY
