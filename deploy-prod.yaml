@@ -6,4 +6,7 @@ spec:
   template:
     spec:
       containers:
-      - image: microservice-01      
+      - image: microservice-01
+        env:
+        - name: NAME
+          value: PRODUCTION        

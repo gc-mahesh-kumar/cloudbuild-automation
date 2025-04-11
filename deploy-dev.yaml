@@ -7,3 +7,6 @@ spec:
     spec:
       containers:
       - image: microservice-01
+        env:
+        - name: NAME
+          value: DEV
