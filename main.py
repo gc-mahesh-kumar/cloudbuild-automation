@@ -7,7 +7,8 @@ def hello():
 
 @app.route("/version")
 def version():
-  return "Helloworld 1.2\n"
+  return "Helloworld 1.2ls
+  \n"
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0',port=8080)
