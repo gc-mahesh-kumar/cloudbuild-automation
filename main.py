@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
   name = os.getenv("NAME", "World")
-  return f"<h1>Hello {name} from Cloud Build and Cloud Deploy New Rollout- July</h1>"
+  return f"<h1>Hello {name} from Cloud Build and Cloud Deploy New Rollout - July Rocking</h1>"
 
 @app.route("/version")
 def version():
